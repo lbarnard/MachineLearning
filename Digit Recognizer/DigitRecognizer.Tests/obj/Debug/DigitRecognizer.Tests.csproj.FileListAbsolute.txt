@@ -7,3 +7,12 @@ C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Te
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.csprojResolveAssemblyReference.cache
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.dll
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Tests.dll
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Tests.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Core.dll
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\bin\Debug\nunit.framework.dll
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Core.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\bin\Debug\nunit.framework.xml
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.csprojResolveAssemblyReference.cache
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.dll
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.pdb

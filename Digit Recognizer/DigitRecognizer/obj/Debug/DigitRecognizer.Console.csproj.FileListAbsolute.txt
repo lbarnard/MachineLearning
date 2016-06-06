@@ -13,3 +13,15 @@ C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer\bi
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.exe.config
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.exe
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.exe.config
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.exe
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\Data\test.csv
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\Data\train_lite.csv
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\Data\validation.csv
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\Data\train.csv
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.exe
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.Core.dll
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.Core.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.Console.csprojResolveAssemblyReference.cache

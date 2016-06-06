@@ -3,3 +3,8 @@ C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Co
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Core\obj\Debug\DigitRecognizer.Core.csprojResolveAssemblyReference.cache
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Core\obj\Debug\DigitRecognizer.Core.dll
 C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Core\obj\Debug\DigitRecognizer.Core.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Core\bin\Debug\DigitRecognizer.Core.dll
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Core\bin\Debug\DigitRecognizer.Core.pdb
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Core\obj\Debug\DigitRecognizer.Core.csprojResolveAssemblyReference.cache
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Core\obj\Debug\DigitRecognizer.Core.dll
+C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer.Core\obj\Debug\DigitRecognizer.Core.pdb

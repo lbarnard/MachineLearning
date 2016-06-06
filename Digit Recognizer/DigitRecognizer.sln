@@ -7,13 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitRecognizer.Console", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitRecognizer.Core", "DigitRecognizer.Core\DigitRecognizer.Core.csproj", "{1E7810F8-3A4F-43DD-A1C9-8E7925861059}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F0AC3593-0C3D-4281-8E9C-6A747F5FB006}"
-	ProjectSection(SolutionItems) = preProject
-		Data\test.csv = Data\test.csv
-		Data\train.csv = Data\train.csv
-		Data\train_cutdown.csv = Data\train_cutdown.csv
-	EndProjectSection
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DigitRecognizer.FSharp", "DigitRecognizer.FSharp\DigitRecognizer.FSharp.fsproj", "{85349A38-96A2-4221-B763-98DCFBCB8A3F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitRecognizer.Tests", "DigitRecognizer.Tests\DigitRecognizer.Tests.csproj", "{E56C96A3-9D95-45BD-9345-4296AE0BE0AD}"
