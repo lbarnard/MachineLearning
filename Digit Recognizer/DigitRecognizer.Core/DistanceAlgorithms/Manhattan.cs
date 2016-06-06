@@ -6,15 +6,9 @@ namespace DigitRecognizer.Core.DistanceAlgorithms
     {
         public double Between(int[] pixels1, int[] pixels2)
         {
-            if (pixels1.Length != pixels2.Length)
-            {
-                throw new ArgumentException("Inconsistent image sizes.");
-            }
-
-            var length = pixels1.Length;
             var distance = 0;
 
-            for (var i = 0; i < length; i++)
+            for (var i = 0; i < pixels1.Length; i++)
             {
                 distance += Math.Abs(pixels1[i] - pixels2[i]);
             }
