@@ -1,0 +1,9 @@
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Tests.dll
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Tests.pdb
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Core.dll
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\bin\Debug\nunit.framework.dll
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\bin\Debug\DigitRecognizer.Core.pdb
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\bin\Debug\nunit.framework.xml
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.csprojResolveAssemblyReference.cache
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.dll
+C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\DigitRecognizer.Tests\obj\Debug\DigitRecognizer.Tests.pdb
