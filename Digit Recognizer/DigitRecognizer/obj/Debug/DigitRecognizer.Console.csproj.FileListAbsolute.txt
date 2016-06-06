@@ -25,3 +25,6 @@ C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecog
 C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.Core.dll
 C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.Core.pdb
 C:\GitTest\MachineLearning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.Console.csprojResolveAssemblyReference.cache
+C:\GIT\MachineLearning\Digit Recognizer\DigitRecognizer\bin\Debug\DigitRecognizer.exe.config
+C:\GIT\MachineLearning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.exe
+C:\GIT\MachineLearning\Digit Recognizer\DigitRecognizer\obj\Debug\DigitRecognizer.pdb
