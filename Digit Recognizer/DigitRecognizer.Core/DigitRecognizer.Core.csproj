@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParallelClassifier.cs" />
     <Compile Include="BasicClassifier.cs" />
     <Compile Include="DataReader.cs" />
+    <Compile Include="DistanceAlgorithms\ParallelManhattan.cs" />
+    <Compile Include="DistanceAlgorithms\ParallelEuclidean.cs" />
     <Compile Include="DistanceAlgorithms\Euclidean.cs" />
     <Compile Include="DistanceAlgorithms\Manhattan.cs" />
     <Compile Include="ParallelEvaluator.cs" />

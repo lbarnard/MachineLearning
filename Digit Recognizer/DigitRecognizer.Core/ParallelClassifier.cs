@@ -4,14 +4,16 @@ using System.Threading.Tasks;
 
 namespace DigitRecognizer.Core
 {
-    public class BasicClassifier : IClassifier
+    public class ParallelClassifier : IClassifier
     {
         private IEnumerable<Observation> _trainingSet;
         private readonly ICalculateDistance _calculateDistance;
+        private readonly int _maxDegreeOfParallelism;
 
-        public BasicClassifier(ICalculateDistance calculateDistance)
+        public ParallelClassifier(ICalculateDistance calculateDistance, int parallelism)
         {
             _calculateDistance = calculateDistance;
+            _maxDegreeOfParallelism = parallelism;
         }
 
         public void Train(IEnumerable<Observation> trainingSet)
@@ -23,8 +25,8 @@ namespace DigitRecognizer.Core
         {
             Observation best = new Observation("", new int[0]);
             var shortestDistance = Double.MaxValue;
-            
-            foreach (var trainingObservation in _trainingSet)
+
+            Parallel.ForEach(_trainingSet, new ParallelOptions {MaxDegreeOfParallelism = _maxDegreeOfParallelism }, trainingObservation =>
             {
                 var distance = _calculateDistance.Between(trainingObservation.Pixels, pixels);
                 if (distance < shortestDistance)
@@ -32,7 +34,8 @@ namespace DigitRecognizer.Core
                     shortestDistance = distance;
                     best = trainingObservation;
                 }
-            }
+            });
+            
             return best.Label;
         }
     }

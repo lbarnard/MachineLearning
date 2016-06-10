@@ -12,7 +12,7 @@ namespace DigitRecognizer.Core.DistanceAlgorithms
             {
                 distance += Math.Pow(pixels1[i] - pixels2[i], 2);
             }
-            return distance;
+            return Math.Sqrt(distance);
         }
     }
 }

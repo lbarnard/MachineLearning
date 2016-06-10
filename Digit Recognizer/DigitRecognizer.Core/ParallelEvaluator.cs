@@ -13,7 +13,7 @@ namespace DigitRecognizer.Core
             int progress = 0;
             decimal currentProgress = 0;
             var observations  = validationSet as IList<Observation> ?? validationSet.ToList();
-            Parallel.ForEach(observations, new ParallelOptions { MaxDegreeOfParallelism = 8 }, observation =>
+            Parallel.ForEach(observations, new ParallelOptions { MaxDegreeOfParallelism = 2 }, observation =>
                                             {
                                                 var score = Score(observation, classifier);
                                                 scores.Add(score);
