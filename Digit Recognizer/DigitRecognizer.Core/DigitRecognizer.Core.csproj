@@ -44,6 +44,7 @@
     <Compile Include="DataReader.cs" />
     <Compile Include="DistanceAlgorithms\Euclidean.cs" />
     <Compile Include="DistanceAlgorithms\Manhattan.cs" />
+    <Compile Include="ParallelEvaluator.cs" />
     <Compile Include="Evaluator.cs" />
     <Compile Include="IClassifier.cs" />
     <Compile Include="ICalculateDistance.cs" />

@@ -48,8 +48,8 @@ let validationData = reader validationPath
 
 validationData
 |> Array.averageBy (fun x -> if classifier x.Pixels = x.Label then 1. else 0.)
-|> printfn "Correct: %.3f"
+|> printfn "Manhattan Correct: %.3f"
 
 validationData
 |> Array.averageBy (fun x -> if euclassifier x.Pixels = x.Label then 1. else 0.)
-|> printfn "Correct: %.3f"
+|> printfn "Euclidean Correct: %.3f"

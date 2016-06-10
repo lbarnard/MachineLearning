@@ -9,34 +9,59 @@ using DigitRecognizer.Core.DistanceAlgorithms;
 
 namespace DigitRecognizer
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
+        {
+            Manhattan();
+            Console.ReadLine();
+        }
+
+        private static void Manhattan()
+        {
+            var manhattan = new Manhattan();
+            var manhattanClassifier = new BasicClassifier(manhattan);
+
+            var trainingPath = @"Data\train.csv";
+            var training = DataReader.ReadObservations(trainingPath);
+            Console.WriteLine("Training with Manhattan Classifier");
+            manhattanClassifier.Train(training);
+            Console.WriteLine("Training complete");
+
+            var validationPath = @"Data\validation.csv";
+            Console.WriteLine("Loading Validation Set");
+            var validation = DataReader.ReadObservations(validationPath);
+            Console.WriteLine("Validation Set Loaded");
+
+            var evaluator = new ParallelEvaluator();
+
+            Console.WriteLine("Validating...");
+            Console.WriteLine("Started at  " + DateTime.Now );
+            var correct = evaluator.Correct(validation, manhattanClassifier);
+            Console.WriteLine("Completed at  " + DateTime.Now);
+            Console.WriteLine("Manhattan Score: {0:P2}", correct);
+
+        }
+
+        private static void Euclidean()
         {
             var euclidean = new Euclidean();
             var euclideanClassifier = new BasicClassifier(euclidean);
 
-            var manhattan = new Manhattan();
-            var manhattanClassifier = new BasicClassifier(manhattan);
-
             var trainingPath = @"Data\train_lite.csv";
             var training = DataReader.ReadObservations(trainingPath);
             euclideanClassifier.Train(training);
-            manhattanClassifier.Train(training);
 
             var validationPath = @"Data\train.csv";
             var validation = DataReader.ReadObservations(validationPath);
 
-            var evaluator = new Evaluator();
+            var evaluator = new ParallelEvaluator();
 
-            var correct = evaluator.Correct(validation, manhattanClassifier);
-            Console.WriteLine("Manhattan Score: {0:P2}", correct);
-
-            correct = evaluator.Correct(validation, euclideanClassifier);
+            var correct = evaluator.Correct(validation, euclideanClassifier);
             Console.WriteLine("Euclidean Score: {0:P2}", correct);
 
-  
-        Console.ReadLine();
+
+            Console.ReadLine();
         }
     }
 }

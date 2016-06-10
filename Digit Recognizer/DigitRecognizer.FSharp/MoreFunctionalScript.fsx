@@ -12,7 +12,7 @@ let reader path =
     data.[1..]
     |> Array.map toObservation
 
-let trainingPath = @"C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\Data\train_lite.csv"
+let trainingPath = @"D:\GIT\MachineLearning\Digit Recognizer\DigitRecognizer\Data\train_lite.csv"
 let trainingData = reader trainingPath
 
 type Distance = int[] * int[] -> int
@@ -35,7 +35,7 @@ let train (trainingset:Observation[]) (dist:Distance) =
     classify
 
 
-let validationPath = @"C:\Projects\Machine Learning\Digit Recognizer\DigitRecognizer\Data\train.csv"
+let validationPath = @"D:\GIT\MachineLearning\Digit Recognizer\DigitRecognizer\Data\train.csv"
 let validationData = reader validationPath
 
 let manhattanClassifier = train trainingData manhattanDistance
