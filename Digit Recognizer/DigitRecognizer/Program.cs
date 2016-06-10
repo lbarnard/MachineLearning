@@ -28,7 +28,7 @@ namespace DigitRecognizer
             manhattanClassifier.Train(training);
             Console.WriteLine("Training complete");
 
-            var validationPath = @"Data\validation.csv";
+            var validationPath = @"Data\test.csv";
             Console.WriteLine("Loading Validation Set");
             var validation = DataReader.ReadObservations(validationPath);
             Console.WriteLine("Validation Set Loaded");
@@ -48,11 +48,11 @@ namespace DigitRecognizer
             var euclidean = new Euclidean();
             var euclideanClassifier = new BasicClassifier(euclidean);
 
-            var trainingPath = @"Data\train_lite.csv";
+            var trainingPath = @"Data\train.csv";
             var training = DataReader.ReadObservations(trainingPath);
             euclideanClassifier.Train(training);
 
-            var validationPath = @"Data\train.csv";
+            var validationPath = @"Data\test.csv";
             var validation = DataReader.ReadObservations(validationPath);
 
             var evaluator = new ParallelEvaluator();
