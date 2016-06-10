@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DigitRecognizer.Core
 {
@@ -12,7 +13,7 @@ namespace DigitRecognizer.Core
         {
             _calculateDistance = calculateDistance;
         }
-        
+
         public void Train(IEnumerable<Observation> trainingSet)
         {
             _trainingSet = trainingSet;
@@ -20,10 +21,10 @@ namespace DigitRecognizer.Core
 
         public string Predict(int[] pixels)
         {
-            Observation best = new Observation("",new int[0]);
+            Observation best = new Observation("", new int[0]);
             var shortestDistance = Double.MaxValue;
 
-            foreach (var trainingObservation in _trainingSet)
+            Parallel.ForEach(_trainingSet, trainingObservation =>
             {
                 var distance = _calculateDistance.Between(trainingObservation.Pixels, pixels);
                 if (distance < shortestDistance)
@@ -31,7 +32,16 @@ namespace DigitRecognizer.Core
                     shortestDistance = distance;
                     best = trainingObservation;
                 }
-            }
+            });
+            //foreach (var trainingObservation in _trainingSet)
+            //{
+            //    var distance = _calculateDistance.Between(trainingObservation.Pixels, pixels);
+            //    if (distance < shortestDistance)
+            //    {
+            //        shortestDistance = distance;
+            //        best = trainingObservation;
+            //    }
+            //}
             return best.Label;
         }
     }
