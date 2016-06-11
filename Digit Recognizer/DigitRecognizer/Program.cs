@@ -8,15 +8,15 @@ namespace DigitRecognizer
     {
         private static void Main(string[] args)
         {
-            //Manhattan();
-            Euclidean();
+            Manhattan();
+            //Euclidean();
             Console.ReadLine();
         }
 
         private static void Manhattan()
         {
             var manhattan = new Manhattan();
-            var manhattanClassifier = new ParallelClassifier(manhattan, 3);
+            var manhattanClassifier = new ParallelClassifier(manhattan, 2);
 
             var trainingPath = @"Data\train_full.csv";
             var training = DataReader.ReadObservations(trainingPath);
