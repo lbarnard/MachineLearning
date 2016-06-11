@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DigitRecognizer.Visualize"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Digit Recognizer Visualizer" Height="350" Width="525">
     <StackPanel Orientation="Horizontal">
-        <Grid Name="digitGrid" Margin="0,0,0,0" Width="280" Height="280" />
-        <TextBlock x:Name="txtDigit" Margin="0,0,0,0" TextWrapping="Wrap" Text="1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" FontSize="200" Height="316"/>
+        <Grid Name="DigitGrid" Margin="0,0,0,0" Width="280" Height="280" />
+        <TextBlock x:Name="TxtDigit" Margin="0,0,0,0" TextWrapping="Wrap" Text="1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" FontSize="200" Height="316"/>
         <StackPanel Width="90">
-            <Button Name="btnNext" Content="Next" FontFamily="Consolas" FontSize="15" Click="BtnNext_OnClick" />
-            <Button Name="btnPrevious" Content="Previous" FontFamily="Consolas" FontSize="15" Click="BtnPrevious_OnClick" />
+            <Button Name="BtnNext" Content="Next" FontFamily="Consolas" FontSize="15" Click="BtnNext_OnClick" />
+            <Button Name="BtnPrevious" Content="Previous" FontFamily="Consolas" FontSize="15" Click="BtnPrevious_OnClick" />
         </StackPanel>
     </StackPanel>
 </Window>
